@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Login</title>
+<style>
+form{
+margin:250px;
+}
+body{
+background-image:url("carlogo.jpg");
+}
+input[type=text],[type=password]{
+padding:12px;
+width:500px;
+margin:10px 10px 10px 10px;
+border:3px solid aqua;
+}
+input[type=text]:hover,input[type=password]:hover{
+padding:12px;
+margin:auto auto;
+background-color:lime;
+}
+label{
+text-transform:uppercase;
+background-color:black;
+font-size:20px;
+color:white
+
+}
+.qw{
+    margin-left: 400px;
+    background-color: black;
+    font-size: large;
+    color: red;
+}
+.qw:hover{
+    color: black;
+    background-color: red;
+}
+input[type=button]{
+    margin-left: 120px;
+    color:rgb(255, 0, 0);
+    background-color: black;
+
+}
+input[type=button]:hover{
+    color: black;
+    background-color: red;
+}
+
+
+</style>
+</head>
+<body>
+
+<form class="wrapper">
+<label for="Username">Username</label>
+<input type="text" name="Username" id="Username" placeholder="Username"/>
+<br>
+<label for="password">password</label>
+<input type="password" name="password" id="password" placeholder="password"/><br><br>
+<input type="button" value="Login">
+<a href="" class="qw">Forget Password</a>
+</form>
+</body>
+</html>

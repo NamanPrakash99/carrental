@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> FORMS </title>
+<style>
+body{
+    background-image: url("carlogo.jpg");
+}
+    legend{
+font-size:xx-large;
+font-weight: bold;
+color:black;
+}
+form{
+margin:50px;
+}
+label{
+text-transform:uppercase;
+font-size:14px;
+font-weight:bold;
+}
+input[name=text]{
+    margin-left: 100px;
+}
+input[type=email]{
+margin-left:170px
+}
+input[type=number]{
+    margin-left: 110px;
+}
+textarea[name=Message]{
+    margin-left: 140px;
+}
+input[type=text],input[type=password],[type=email],[type=number],[name=dropdown]{
+padding:12px;
+width:700px;
+margin:8px 8px 8px 8px;
+border:3px solid aqua;
+}
+input[type=submit]:hover,input[type=reset]:hover{
+padding:12px;
+margin:auto auto;
+background-color:red;
+}
+
+input[type=submit],input[type=reset]{
+padding:12px;
+margin:auto auto;
+background-color:aqua;
+}
+#Search{
+padding:12px;
+background-image:url("searchicon.jpg" height="3px" width="3px");
+background-repeat: no-repeat;
+background-size:25px;
+padding-left:40px;
+}
+label{
+text-transform:uppercase;
+background-color:black;
+font-size:20px;
+color:white
+}
+
+
+</style>
+</head>
+<body>
+<form>
+<fieldset>
+<legend>Contact us</legend>
+<label for="firstname">FirstName</label>
+<input type="text" name="text" id="firstname" placeholder="firstname"/>
+<br>
+<label for="email">email</label>
+<input type="email" name="email" id="email" placeholder="email"/>
+<br>
+<label for="ContactNo">ContactNo</label>
+<input type="number" name="ContactNo" id="ContactNo" placeholder="ContactNo"/>
+<br><br>
+<label for="dropdown">Choose how u want:</label>
+<select name="dropdown">
+<option value="AP">How You Want To Deal</option>
+<option value="JK">Call</option>
+<option value="JK">Email</option>
+<option value="MP">Message</option>
+</select><br>
+<br>
+<label for="Message">Message</label>
+<textarea name="Message" rows="10" cols="60"> </textarea> <br>
+
+<input type="Submit">
+<input type="Reset">
+<br>
+
+</fieldset>
+</form>
+</body>
+</html>
